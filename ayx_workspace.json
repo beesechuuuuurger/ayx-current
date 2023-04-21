@@ -1,0 +1,49 @@
+{
+    "name": "GPT",
+    "tool_category": "Laboratory",
+    "package_icon_path": "configuration\\default_package_icon.png",
+    "author": "Gavin Volpe",
+    "company": "Evolve Cloud Services",
+    "copyright": "2023",
+    "description": "gpt in ayx",
+    "ayx_cli_version": "1.0.4",
+    "backend_language": "python",
+    "backend_language_settings": {
+        "python_version": "3.8",
+        "requirements_local_path": "tool_backends\\requirements-local.txt",
+        "requirements_thirdparty_path": "tool_backends\\requirements-thirdparty.txt"
+    },
+    "tools": {
+        "AyxGPT": {
+            "backend": {
+                "tool_module": "ayx_plugins",
+                "tool_class_name": "AyxGPT"
+            },
+            "ui": {},
+            "configuration": {
+                "long_name": "Ayx GPT",
+                "description": "gpt in ayx",
+                "version": "1",
+                "search_tags": [],
+                "help_url": "https://help.alteryx.com/developer-help",
+                "icon_path": "configuration\\AyxGPT_1\\icon.png",
+                "input_anchors": {
+                    "Input": {
+                        "label": "",
+                        "allow_multiple": false,
+                        "optional": false
+                    }
+                },
+                "output_anchors": {
+                    "Output": {
+                        "label": "",
+                        "allow_multiple": false,
+                        "optional": false
+                    }
+                },
+                "dcm_namespace": ""
+            }
+        }
+    },
+    "tool_version": "1.0"
+}

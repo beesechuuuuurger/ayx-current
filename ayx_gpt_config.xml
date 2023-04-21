@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<AlteryxJavaScriptPlugin>
+  <EngineSettings EngineDll="Python" EngineDllEntryPoint="ayx_gpt.py" SDKVersion="10.1" />
+  <GuiSettings Html="gpt.html" Icon="ayx_gpt.png" Help="" SDKVersion="10.1">
+    <InputConnections>
+      <Connection Name="Input1" AllowMultiple="False" Optional="True" Type="Connection" Label="Input column to classify" ToolTip="Select the column containing the values to classify."/>
+      <Connection Name="Input2" AllowMultiple="False" Optional="False" Type="Connection" Label="Category column" ToolTip="Select the column containing the categories to classify the input values as."/>
+    </InputConnections>
+    <OutputConnections>
+      <Connection Name="Output" AllowMultiple="False" Optional="False" Type="Connection" Label="Output column" ToolTip="The column containing the classification results."/>
+    </OutputConnections>
+  </GuiSettings>
+  <Properties>
+    <MetaInfo>
+      <Name>ChatGPT Column Classification</Name>
+      <Description>Uses OpenAI's GPT to classify the values in a given input column.</Description>
+      <CategoryName>Text Mining</CategoryName>
+      <SearchTags>openai, gpt, classification, sdk</SearchTags>
+      <ToolVersion>1.0</ToolVersion>
+      <Author>Gavin Volpe</Author>
+      <Company>Evolve Cloud Services</Company>
+      <Copyright></Copyright>
+    </MetaInfo>
+  </Properties>
+</AlteryxJavaScriptPlugin>
